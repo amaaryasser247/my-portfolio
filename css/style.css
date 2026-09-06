@@ -9,6 +9,10 @@
   --text-muted: #d1d5db;
 }
 
+html{
+  scroll-padding-top: 48px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-main);
