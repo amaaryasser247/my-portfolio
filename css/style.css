@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6, .orbitron {
 .project-img-wrapper {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  aspect-ratio: 16 / 10;
   border-bottom: 1px solid rgba(0, 243, 255, 0.2);
 }
 
@@ -226,12 +226,13 @@ h1, h2, h3, h4, h5, h6, .orbitron {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   transition: transform 0.5s ease;
   filter: grayscale(100%) brightness(70%);
 }
 
 .cyber-card:hover .project-img-wrapper img {
-  transform: scale(1.1);
+  transform: scale(1.04);
   filter: grayscale(0%) brightness(100%);
 }
 
