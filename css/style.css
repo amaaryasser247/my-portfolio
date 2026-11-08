@@ -11,6 +11,7 @@
 
 html{
   scroll-padding-top: 48px;
+  overflow-x: hidden;
 }
 
 body {
@@ -220,6 +221,28 @@ h1, h2, h3, h4, h5, h6, .orbitron {
   overflow: hidden;
   aspect-ratio: 16 / 10;
   border-bottom: 1px solid rgba(0, 243, 255, 0.2);
+  background: linear-gradient(135deg, #0a0a0a, #111827);
+}
+
+.project-rank {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--cyber-cyan);
+  background: rgba(5, 5, 5, 0.8);
+  border: 1px solid rgba(0, 243, 255, 0.45);
+  padding: 0.3rem 0.55rem;
+  pointer-events: none;
+}
+
+.cyber-card-pink .project-rank {
+  color: var(--cyber-pink);
+  border-color: rgba(255, 0, 60, 0.5);
 }
 
 .project-img-wrapper img {
